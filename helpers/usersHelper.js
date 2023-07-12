@@ -7,16 +7,32 @@ class Users {
         return allUsers;
     }
 
+    static setAllUsers(users) {
+        return Files.writeFileSync(users);
+    }
+
     static getUser(email) {
-        const allUsers = Files.readFileSync();
+        const allUsers = this.getAllUsers();
         const findUserIndex = allUsers.findIndex(user => user.email === email);
         return allUsers[findUserIndex];
     }
 
     static addUser(user) {
-        const allUsers = Files.readFileSync();
+        const allUsers = this.getAllUsers();
         allUsers.push(user);
-        Files.writeFileSync(allUsers);
+        return Files.writeFileSync(allUsers);
+    }
+
+    static getUserById(id) {
+        const allUsers = this.getAllUsers();
+        const findUserIndex = allUsers.findIndex(user => user._id === id);
+        return findUserIndex !== -1 ? allUsers[findUserIndex] : null;
+    }
+
+    static getAuthUserIndex(id) {
+        const allUsers = this.getAllUsers();
+        const findUserIndex = allUsers.findIndex(user => user._id === id);
+        return {allUsers, authUserIndex: findUserIndex}
     }
 }
 

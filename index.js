@@ -1,10 +1,11 @@
 const express = require('express');
 const bodyParser = require('body-parser');
+
 const {routes: newsRoutes} = require('./routes/newsRoutes');
 const {routes: prefRoutes} = require('./routes/prefRoutes');
 const {routes: indexRoutes} = require('./routes');
 
-require('dotenv').config()
+require('dotenv').config();
 
 const app = express();
 

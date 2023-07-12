@@ -3,13 +3,45 @@
         "email": "test@gmail.com",
         "categories": [
             "business",
-            "general"
+            "general",
+            "entertainment",
+            "sports"
         ],
         "sources": [
-            "abc-news"
+            "abc-news",
+            "cnn",
+            "reuters"
         ],
         "_id": "351j185tqlk00cisj",
         "password": "$2a$10$4WCKdElPUN6jBqAPgdsbYuyM/c9thNiaTz.e1nD8.2a8N6m3EZt8C",
-        "createdAt": 1689183676962
+        "createdAt": 1689183676962,
+        "articles": [
+            {
+                "source": {
+                    "id": "abc-news",
+                    "name": "ABC News"
+                },
+                "author": "MATT O'BRIEN AP Technology Writer",
+                "title": "Microsoft can move ahead with record $69 billion acquisition of Activision Blizzard, judge rules - ABC News",
+                "description": "A federal judge has handed Microsoft a major victory by declining to block its looming $69 billion takeover of video game company Activision Blizzard",
+                "url": "https://abcnews.go.com/US/wireStory/judge-declines-block-microsofts-record-69-billion-deal-101095067",
+                "urlToImage": "https://s.abcnews.com/images/US/wirestory_2322c62e67e6c1316b3ce043e66cff62_16x9_992.jpg",
+                "publishedAt": "2023-07-11T17:53:02Z",
+                "content": "A federal judge has handed Microsoft a major victory by declining to block its looming $69 billion takeover of video game company Activision Blizzard. Regulators sought to ax the deal saying it will … [+6384 chars]"
+            },
+            {
+                "source": {
+                    "id": "cnn",
+                    "name": "CNN"
+                },
+                "author": "Betsy Klein",
+                "title": "Biden and NATO leaders ride wave of momentum after Turkey agrees to Sweden’s membership - CNN",
+                "description": "President Joe Biden and alliance leaders enter the first day of the high-stakes NATO Summit Tuesday with a reinvigorated sense of unity after a major win on Monday evening when Turkey agreed to Sweden’s bid to join the alliance – but the thorny issue of Ukrai…",
+                "url": "https://www.cnn.com/2023/07/11/politics/joe-biden-nato-summit-day-1/index.html",
+                "urlToImage": "https://media.cnn.com/api/v1/images/stellar/prod/230711091031-04-nato-summit-071123-leaders.jpg?c=16x9&q=w_800,c_fill",
+                "publishedAt": "2023-07-11T16:41:00Z",
+                "content": "President Joe Biden and alliance leaders enter the first day of the high-stakes NATO Summit Tuesday with a reinvigorated sense of unity after a major win on Monday evening when Turkey agreed to Swede… [+9707 chars]"
+            }
+        ]
     }
 ]
