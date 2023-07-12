@@ -1,13 +1,15 @@
-{
-    "email": "test@gmail.com",
-    "categories": [
-        "business",
-        "general"
-    ],
-    "sources": [
-        "abc-news"
-    ],
-    "_id": "351j184llljzxz0fh",
-    "password": "$2a$10$Kybiwf6R1i.JX56JTm/xSu4H3zfsuie7iV5CnITQHEoTiKN10NWKe",
-    "createdAt": 1689179687404
-}
+[
+    {
+        "email": "test@gmail.com",
+        "categories": [
+            "business",
+            "general"
+        ],
+        "sources": [
+            "abc-news"
+        ],
+        "_id": "351j185tqlk00cisj",
+        "password": "$2a$10$4WCKdElPUN6jBqAPgdsbYuyM/c9thNiaTz.e1nD8.2a8N6m3EZt8C",
+        "createdAt": 1689183676962
+    }
+]

@@ -1,21 +1,13 @@
 const { checkSchema, validationResult } = require('express-validator');
 
-const { signUpUserSchema } = require('../models/user');
+const { signUpUserSchema, signInUserSchema } = require('../models/user');
 
 const signUpValidator = (req, res, next) => {
-    // const result = await checkSchema({
-    //     email: { isEmail: true },
-    //     pasword: { isLength: { options: { min: 8 } } },
-    // }).run(req);
-
-    // console.log("result....", result)
+   
     checkSchema(signUpUserSchema);
     const result = validationResult(req);
 
-    console.log("result....", result)
-
     if (!result.isEmpty()) {
-        //console.log(result.)
         req.validated = false;
         req.errors = result.array();
     } else {
@@ -29,4 +21,17 @@ const signUpValidator = (req, res, next) => {
     next();
 }
 
-module.exports = { signUpValidator };
+const signInValidator = (req, res, next) => {
+    checkSchema(signInUserSchema);
+    const result = validationResult(req);
+
+    if (!result.isEmpty()) {
+        req.validated = false;
+        req.errors = result.array();
+    } else {
+        req.validated = true;
+    }
+    next();
+}
+
+module.exports = { signUpValidator, signInValidator };

@@ -13,7 +13,7 @@ class Files {
     //Read from File operation
     static readFileSync() {
         const data = fs.readFileSync(FILEPATH, {encoding: 'utf8', flag: 'r'});
-        return data;
+        return JSON.parse(data);
     }
 }
 

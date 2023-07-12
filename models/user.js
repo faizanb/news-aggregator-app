@@ -1,4 +1,4 @@
-const Files = require('../helpers/fileHelper');
+const Users = require('../helpers/usersHelper');
 
 const signUpUserSchema = {
     email: { 
@@ -8,10 +8,9 @@ const signUpUserSchema = {
         },
         custom: {
             options: (value) => {
-                const allUsers = Files.readFileSync();
+                const allUsers = Users.getAllUsers();
                 const existingUserId = allUsers.findIndex(user => user.email === value);
                 if ( existingUserId !== -1 ) {
-                  // Will use the below as the error message
                   throw new Error('A user already exists with this e-mail address');
                 } 
             }
@@ -35,4 +34,22 @@ const signUpUserSchema = {
     }
 }
 
-module.exports = { signUpUserSchema }
+const signInUserSchema = {
+    email: { 
+        notEmpty: true, 
+        isEmail: {
+            errorMessage: 'Must be a valid e-mail address',
+        },
+        custom: {
+            options: (value) => {
+                const allUsers = Users.getAllUsers();
+                const existingUserId = allUsers.findIndex(user => user.email === value);
+                if ( existingUserId === -1 ) {
+                  throw new Error('User with the given e-mail address does not exist');
+                } 
+            }
+        }
+    }
+}
+
+module.exports = { signUpUserSchema, signInUserSchema }

@@ -1,12 +1,12 @@
 const bcrypt = require('bcryptjs');
 const uniqid = require('uniqid');
+const jwt = require('jsonwebtoken');
 
-const Files = require('../helpers/fileHelper');
+const Users = require('../helpers/usersHelper');
 
 const registerUser = (req, res) => {
     if(req.validated) {
         const salt = bcrypt.genSaltSync(10);
-        console.log("salt...", salt)
         bcrypt.hash(req.body.password, salt, function(err, hash) {
             const user = {
                 ...req.user,
@@ -14,7 +14,7 @@ const registerUser = (req, res) => {
                 password: hash,
                 createdAt: new Date().getTime()
             }
-            Files.writeFileSync(user);
+            Users.addUser(user);
             return res.status(200).send({succes: true, message: 'User registered successfully'})
         });
     } else {
@@ -22,4 +22,22 @@ const registerUser = (req, res) => {
     }
 }
 
-module.exports = { registerUser }
+const loginUser = (req, res) => {
+    if(req.validated) {
+        const user = Users.getUser(req.body.email);
+        delete user.password;
+        const token = jwt.sign({
+            user_id: user._id
+        }, 
+        process.env.TOKEN_KEY,
+        {
+            expiresIn: "1d"
+        })
+        user.authtoken = token;
+        res.status(200).json(user);
+    } else {
+        return res.status(401).send({succes: false, message: req.errors[0].msg})
+    }
+}
+
+module.exports = { registerUser, loginUser }
