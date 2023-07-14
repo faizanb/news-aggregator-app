@@ -26,6 +26,7 @@ const loginUser = (req, res) => {
     if(req.validated) {
         const user = Users.getUser(req.body.email);
         delete user.password;
+        delete user.articles;
         const token = jwt.sign({
             user_id: user._id
         }, 

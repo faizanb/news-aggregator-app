@@ -18,29 +18,99 @@
         "articles": [
             {
                 "source": {
-                    "id": "abc-news",
-                    "name": "ABC News"
+                    "id": "cnn",
+                    "name": "CNN"
                 },
-                "author": "MATT O'BRIEN AP Technology Writer",
-                "title": "Microsoft can move ahead with record $69 billion acquisition of Activision Blizzard, judge rules - ABC News",
-                "description": "A federal judge has handed Microsoft a major victory by declining to block its looming $69 billion takeover of video game company Activision Blizzard",
-                "url": "https://abcnews.go.com/US/wireStory/judge-declines-block-microsofts-record-69-billion-deal-101095067",
-                "urlToImage": "https://s.abcnews.com/images/US/wirestory_2322c62e67e6c1316b3ce043e66cff62_16x9_992.jpg",
-                "publishedAt": "2023-07-11T17:53:02Z",
-                "content": "A federal judge has handed Microsoft a major victory by declining to block its looming $69 billion takeover of video game company Activision Blizzard. Regulators sought to ax the deal saying it will … [+6384 chars]"
+                "author": "Rob Picheta, Zahid Mahmood",
+                "title": "Ukraine will ‘no doubt’ join NATO when war with Russia ends, US defense secretary tells CNN - CNN",
+                "description": "The US secretary of defense told CNN on Thursday he has “no doubt” that Ukraine will become part of NATO after Russia’s war against the country ends, following a two-day summit that was dominated by the question of when Kyiv would join the alliance.",
+                "url": "https://www.cnn.com/2023/07/13/politics/lloyd-austin-nato-ukraine-intl/index.html",
+                "urlToImage": "https://media.cnn.com/api/v1/images/stellar/prod/230712152531-03-nato-summit-071223-biden-zelensky.jpg?c=16x9&q=w_800,c_fill",
+                "publishedAt": "2023-07-13T11:26:00Z",
+                "content": "Watch the full interview with Defense Secretary Lloyd Austin at 6 p.m. ET on The Situation Room with Wolf Blitzer.\r\nUS Secretary of Defense Lloyd Austin told CNN on Thursday he has no doubt that Ukra… [+3495 chars]",
+                "_id": "351j18817lk2j15s6",
+                "isRead": true,
+                "isFavorite": true
+            },
+            {
+                "source": {
+                    "id": "reuters",
+                    "name": "Reuters"
+                },
+                "author": "Olena Harmash",
+                "title": "Russia attacks Kyiv for third night in a row, one killed in south Ukraine - Reuters",
+                "description": "Russia attacked Kyiv for a third successive night, wounding four people, and an elderly woman was killed by Russian shelling in southern Ukraine on Thursday, Ukrainian officials said.",
+                "url": "https://www.reuters.com/world/europe/falling-debris-drone-attack-hits-kyiv-districts-military-2023-07-12/",
+                "urlToImage": "https://www.reuters.com/resizer/iQ-BZOakAdd-Gymmc8GZUv6s4ng=/1200x628/smart/filters:quality(80)/cloudfront-us-east-2.images.arcpublishing.com/reuters/IZIIRX6BHFJYBLYKCR7KXSEYPI.jpg",
+                "publishedAt": "2023-07-13T11:20:00Z",
+                "content": "KYIV, July 13 (Reuters) - Russia attacked Kyiv for a third successive night, wounding four people, and an elderly woman was killed by Russian shelling in southern Ukraine on Thursday, Ukrainian offic… [+2407 chars]",
+                "_id": "351j18817lk2j15s7",
+                "isRead": false,
+                "isFavorite": false
             },
             {
                 "source": {
                     "id": "cnn",
                     "name": "CNN"
                 },
-                "author": "Betsy Klein",
-                "title": "Biden and NATO leaders ride wave of momentum after Turkey agrees to Sweden’s membership - CNN",
-                "description": "President Joe Biden and alliance leaders enter the first day of the high-stakes NATO Summit Tuesday with a reinvigorated sense of unity after a major win on Monday evening when Turkey agreed to Sweden’s bid to join the alliance – but the thorny issue of Ukrai…",
-                "url": "https://www.cnn.com/2023/07/11/politics/joe-biden-nato-summit-day-1/index.html",
-                "urlToImage": "https://media.cnn.com/api/v1/images/stellar/prod/230711091031-04-nato-summit-071123-leaders.jpg?c=16x9&q=w_800,c_fill",
-                "publishedAt": "2023-07-11T16:41:00Z",
-                "content": "President Joe Biden and alliance leaders enter the first day of the high-stakes NATO Summit Tuesday with a reinvigorated sense of unity after a major win on Monday evening when Turkey agreed to Swede… [+9707 chars]"
+                "author": "Tim Lister, Uliana Pavlova, Anna Chernova",
+                "title": "Russian general in Ukraine says he was fired after accusing defense ministry of betraying troops - CNN",
+                "description": "A senior Russian general in command of forces in occupied southern Ukraine says he was suddenly dismissed from his post after accusing Moscow’s Defense Ministry leadership of betraying his troops by not providing sufficient support.",
+                "url": "https://www.cnn.com/2023/07/12/europe/russian-general-treachery-accusations-ukraine-intl-hnk/index.html",
+                "urlToImage": "https://media.cnn.com/api/v1/images/stellar/prod/230712180856-02-ivan-popov-file-071223.jpg?c=16x9&q=w_800,c_fill",
+                "publishedAt": "2023-07-13T11:04:00Z",
+                "content": "A senior Russian general in command of forces in occupied southern Ukraine says he was suddenly dismissed from his post after accusing Moscows Defense Ministry leadership of betraying his troops by n… [+4838 chars]",
+                "_id": "351j18817lk2j15s8",
+                "isRead": false,
+                "isFavorite": false
+            },
+            {
+                "source": {
+                    "id": "cnn",
+                    "name": "CNN"
+                },
+                "author": "Abby Turner, Andrew Kaczynski",
+                "title": "Robert F. Kennedy Jr. repeatedly suggested that chemicals in water are impacting sexuality of children - CNN",
+                "description": "Democratic presidential candidate Robert F. Kennedy Jr. has a history of repeatedly sharing unfounded conspiracies that man-made chemicals in the environment could be making children gay or transgender and causing the feminization of boys and masculinization …",
+                "url": "https://www.cnn.com/2023/07/13/politics/robert-kennedy-jr-chemicals-water-children-frogs/index.html",
+                "urlToImage": "https://media.cnn.com/api/v1/images/stellar/prod/230622115241-01-robert-kennedy-jr-0620.jpg?c=16x9&q=w_800,c_fill",
+                "publishedAt": "2023-07-13T11:01:00Z",
+                "content": "Democratic presidential candidate Robert F. Kennedy Jr. has a history of repeatedly sharing unfounded conspiracies that man-made chemicals in the environment could be making children gay or transgend… [+6073 chars]",
+                "_id": "351j18817lk2j15s9",
+                "isRead": false,
+                "isFavorite": false
+            },
+            {
+                "source": {
+                    "id": "reuters",
+                    "name": "Reuters"
+                },
+                "author": "Joe Cash, Ellen Zhang",
+                "title": "China's exports fall most in three years as global economy falters - Reuters",
+                "description": "China's exports fell last month at their fastest pace since the onset three years ago of the COVID-19 pandemic, as an ailing global economy puts mounting pressure on Chinese policymakers for fresh stimulus measures.",
+                "url": "https://www.reuters.com/markets/asia/chinas-june-exports-fall-124-imports-drop-68-2023-07-13/",
+                "urlToImage": "https://www.reuters.com/resizer/GA4YkUre7QsziBt8qJcDPzPdZSE=/1200x628/smart/filters:quality(80)/cloudfront-us-east-2.images.arcpublishing.com/reuters/D2ED6ANVGZJNZEMKQBNSFSBSOY.jpg",
+                "publishedAt": "2023-07-13T09:09:00Z",
+                "content": "BEIJING, July 13 (Reuters) - China's exports fell last month at their fastest pace since the onset three years ago of the COVID-19 pandemic, as an ailing global economy puts mounting pressure on Chin… [+4121 chars]",
+                "_id": "351j18817lk2j15sa",
+                "isRead": false,
+                "isFavorite": false
+            },
+            {
+                "source": {
+                    "id": "cnn",
+                    "name": "CNN"
+                },
+                "author": "Jacob Lev",
+                "title": "LeBron James announces he will return this fall for his 21st NBA season - CNN",
+                "description": "After hinting at a possible retirement following a postseason loss in May, NBA superstar LeBron James has announced he will be returning for another year of play – his 21st NBA season.",
+                "url": "https://www.cnn.com/2023/07/13/sport/lebron-james-returns-announcement-nba-spt/index.html",
+                "urlToImage": "https://media.cnn.com/api/v1/images/stellar/prod/230712230506-lebron-james-returns-announcement.jpg?c=16x9&q=w_800,c_fill",
+                "publishedAt": "2023-07-13T06:01:00Z",
+                "content": "After hinting at a possible retirement following a postseason loss in May, NBA superstar LeBron James has announced he will be returning for another year of play his 21st NBA season. \r\nThe leagues al… [+1428 chars]",
+                "_id": "351j18817lk2j15sb",
+                "isRead": false,
+                "isFavorite": false
             }
         ]
     }
